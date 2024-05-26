@@ -1,0 +1,16 @@
+{
+  "name": "pull-frontmatter",
+  "version": "1.0.0",
+  "description": "Extracts YAML front matter from Markdown files and outputs as JSON.",
+  "main": "pull-frontmatter.mjs",
+  "bin": {
+    "pull-frontmatter": "./pull-frontmatter.mjs"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "p-limit": "^5.0.0"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC"
+}

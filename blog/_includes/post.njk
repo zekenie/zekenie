@@ -1,0 +1,44 @@
+---
+layout: default.njk
+url: https://offbyone.us
+templateClass: tmpl-post
+preload:
+  - /
+---
+
+
+<article class="prose lg:prose-xl max-w-3xl my-8">
+<h1>{{ title }}</h1>
+
+<div class="space-y-1">
+  {% if content | readingTime != "0 min" %}
+    <div class="text-blue-800 text-sm">About {{ content | readingTime }} reading time</div>
+  {% endif %}
+  <div class="flex space-x-2 text-sm">
+
+    <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+    {%- for tag in tags | filterTagList -%}
+    {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+    <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+    {%- endfor %}
+  </div>
+</div>
+
+
+{{ content | safe }}
+
+
+{%- if collections.posts %}
+{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+
+<hr>
+
+<ul>
+  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+</ul>
+{%- endif %}
+{%- endif %}
+</article>

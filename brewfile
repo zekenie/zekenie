@@ -1,0 +1,32 @@
+# Taps
+tap 'homebrew/bundle'
+
+# Brew Packages
+brew 'node'
+brew 'nvm'
+brew 'ruby'
+
+brew 'd2'
+brew 'zsh'
+brew 'gh'
+brew 'zsh-autosuggestions'
+brew 'jq'
+
+brew 'netlify-cli'
+brew 'flyctl'
+brew 'awscli'
+brew 'fzf'
+
+# Casks
+# cask 'notion'
+# cask 'chrome'
+cask 'spotify'
+cask 'docker'
+
+
+
+vscode "terrastruct.d2"
+vscode "bierner.markdown-mermaid"
+vscode "RandomFractalsInc.vscode-vega-viewer"
+vscode "eamodio.gitlens"
+vscode "alefragnani.Bookmarks"

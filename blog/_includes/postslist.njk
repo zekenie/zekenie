@@ -1,0 +1,28 @@
+{% macro postCard(post) %}
+  <li class="border overflow-hidden flex flex-col flex-1 {% if post.url == url %} postlist-item-active{% endif %}">
+    
+    <a href="{{ post.url | url }}" class="flex flex-col flex-1">
+      {% if post.data.previewImage %}<img loading="lazy" class="object-cover h-48 lg:h-40 border-b" src="{{ post.data.previewImage | url }}"/>{% endif %}
+      <div class="p-2  flex flex-1 flex-col">
+        <h2 class="font-bold">
+          {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
+        </h2>
+        <p class="text-sm" >{{post.data.description}}</p>
+        <div class="flex-1 my-1" ></div>
+        <time class="postlist-date text-xs text-gray-600" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        <div class="text-xs text-gray-600">
+          {% for tag in post.data.tags | filterTagList %}
+            {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+            <a href="{{ tagUrl | url }}" class="underline">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </a>
+  </li>
+{% endmacro %}
+
+<ol reversed class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+{% for post in postslist | reverse %}
+  {{ postCard(post) }}
+{% endfor %}
+</ol>

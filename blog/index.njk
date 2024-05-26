@@ -1,0 +1,21 @@
+---
+url: https://offbyone.us
+---
+{% extends "_includes/default.njk" %} 
+{% block content %}
+
+{% set maxPosts = collections.posts.length | min(40) %}
+
+{# <h1 class="text-2xl mb-3 font-bold">Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1> #}
+
+<div class="space-y-3 my-4">
+
+  {% set postslist = collections.posts | head(-40) %}
+  {% set postslistCounter = collections.posts | length %}
+  {% include "postslist.njk" %}
+
+  {# <p class="text-sm">More posts can be found in <a class="underline" href="{{ '/posts/' | url }}">the archive</a>.</p> #}
+</div>
+
+
+{% endblock %}
