@@ -9,6 +9,18 @@ layout: post.njk
 previewImage: /img/wr-update/cover.png
 ---
 
+<style>
+  .mermaid {
+    /* position: absolute; */
+    margin: 6em 0!important;
+    top: 10%;
+    left: 10%;
+    background: rgba(0,0,0,0.02)!important;
+    border: 2px solid #ccc;
+    transform: scale(1.2);
+    /* border: 1px solid blue; */
+    }
+</style>
 Hello! It's been about a week since I first wrote about working on [~~Hook~~Web Reducer](/posts/hook-reducer). I'm on vacation from work and have some time to invest in this, and a lot has changed. I'm getting closer and closer to shipping an MVP. That's the next milestone. The vision is also sharpening.
 
 ## Business updates

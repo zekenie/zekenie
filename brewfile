@@ -23,6 +23,9 @@ brew 'fzf'
 # cask 'chrome'
 cask 'spotify'
 cask 'docker'
+cask 'obsidian'
+
+brew 'docker-compose'
 
 
 vscode "terrastruct.d2"
@@ -30,3 +33,4 @@ vscode "bierner.markdown-mermaid"
 vscode "RandomFractalsInc.vscode-vega-viewer"
 vscode "eamodio.gitlens"
 vscode "alefragnani.Bookmarks"
+vscode "streetsidesoftware.code-spell-checker"

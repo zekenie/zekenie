@@ -1,0 +1,1 @@
+- Why early stage founders can make great ICs

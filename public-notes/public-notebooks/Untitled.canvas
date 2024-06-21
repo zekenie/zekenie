@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"24ba29eb306ab154","x":320,"y":-478,"width":765,"height":418,"type":"text","text":"## Trees\n\n```ts\nclass TreeNode<T> {\n    value: T;\n    children: TreeNode<T>[] = [];\n    \n    constructor(value: T) {\n        this.value = value;\n    }\n\n    addChild(child: TreeNode<T>): void {\n        this.children.push(child);\n    }\n    \n   // ...\n}\n```"},
+		{"id":"991032a642158709","x":121,"y":232,"width":519,"height":268,"type":"text","text":"### depth first\n\n```ts\n*depthFirst(): IterableIterator<T> {\n\tyield this.value;\n\tfor (const child of this.children) {\n\t\tyield* child.depthFirstTraversal();\n\t}\n}\n```"},
+		{"id":"e3ccd625aaa54604","x":703,"y":232,"width":557,"height":348,"type":"text","text":"### Breadth first\n\n```ts\n*breadthFirst(): IterableIterator<T> {\n\tconst queue: TreeNode<T>[] = [this];\n\twhile (queue.length > 0) {\n\t\tconst node = queue.shift()!;\n\t\tyield node.value;\n\t\tfor (const child of node.children) {\n\t\t\tqueue.push(child);\n\t\t}\n\t}\n}\n```"},
+		{"id":"6e852c0f3ad0e9c5","x":527,"y":1400,"width":600,"height":394,"type":"text","text":"```js\nconst memoize = fn => {\n  const cache = {};\n  return (...args) => {\n    const key = JSON.stringify(args);\n    \n    if (cache[key]) {\n      return cache[key];\n    }\n\n    const result = fn(...args);\n    cache[key] = result;\n    return result;\n  };\n};\n```"},
+		{"id":"3e647a09a1d9d50a","x":67,"y":731,"width":507,"height":429,"type":"text","text":"## Flatten array of numbers\n\n```js\nfunction flattenArray(arr, result = []) {\n    for (const element of arr) {\n        if (Array.isArray(element)) {\n            flattenArray(element, result);\n        } else {\n            result.push(element);\n        }\n    }\n    return result;\n}  \n\nflattenArray([1, [2, [3, 4], 5], 6, [7, [8, 9]]]);\n// [1, 2, 3, 4, 5, 6, 7, 8, 9]\n```"},
+		{"id":"fbb8a315e2c9f4fc","x":631,"y":731,"width":700,"height":320,"type":"text","text":"## Implement flatmap in typescript\n\n```ts\nfunction flatMap<T, U>(array: T[], callback: (value: T) => U[]): U[] {\n    return array.reduce((acc, currentValue) => {\n        return [...acc, ...callback(currentValue)];\n    }, [] as U[]);\n}\n\nflatMap([1, 2, 3], x => [x, x * 2]);\n // Output: [1, 2, 2, 4, 3, 6]\n\n```"}
+	],
+	"edges":[
+		{"id":"e39bda21b3831838","fromNode":"24ba29eb306ab154","fromSide":"bottom","toNode":"991032a642158709","toSide":"top"},
+		{"id":"60e0edb29a32d801","fromNode":"24ba29eb306ab154","fromSide":"bottom","toNode":"e3ccd625aaa54604","toSide":"top"}
+	]
+}

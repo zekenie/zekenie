@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+# Get the directory of the script file
+script_dir=$(dirname "$0")
+
+# Change to the script directory
+cd "$script_dir"
+
+pull-frontmatter ../blog/posts/**/*.md | jq '.data | map({title, date, description}) | sort_by(.date)'

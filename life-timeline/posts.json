@@ -1,0 +1,147 @@
+[
+  {
+    "title": "Div III: Empowerment software",
+    "date": "2013-05-01T00:00:00.000Z",
+    "description": "A summary of my senior thesis work on building transformative software for communities"
+  },
+  {
+    "title": "Await... async",
+    "date": "2015-11-15T00:00:00.000Z",
+    "description": "Why async await? When's it happening, and what do I do for now?"
+  },
+  {
+    "title": "Sequelize ERD",
+    "date": "2016-01-18T00:00:00.000Z",
+    "description": "Generate GraphViz ERD diagrams from your sequelize models"
+  },
+  {
+    "title": "We have coding in schools backwards",
+    "date": "2017-05-21T00:00:00.000Z",
+    "description": "To hell with the job market: Kids should code because it helps them think."
+  },
+  {
+    "title": "Offer scorecard",
+    "date": "2018-11-15T00:00:00.000Z",
+    "description": "Are you a junior engineer with two competing job offers? What now?"
+  },
+  {
+    "title": "Pandemic writing practice",
+    "date": "2020-08-29T00:00:00.000Z",
+    "description": "Nourishing the mind in these ✨unprecedented times✨"
+  },
+  {
+    "title": "Using Vega Lite to explore chemistry",
+    "date": "2021-02-28T00:00:00.000Z",
+    "description": "My personal journey using computation and visualization to learn chemistry"
+  },
+  {
+    "title": "Playing with Hilbert",
+    "date": "2021-03-13T00:00:00.000Z",
+    "description": "Get a feel for the famous space-filling curve"
+  },
+  {
+    "title": "Great dataviz tweets",
+    "date": "2021-05-15T00:00:00.000Z",
+    "description": "Infrequently updated list of wonderful visualizations I find"
+  },
+  {
+    "title": "Cost of computing",
+    "date": "2021-10-29T00:00:00.000Z",
+    "description": "Why isn't it getting cheaper and cheaper to write programs"
+  },
+  {
+    "title": "How to help a student get unstuck",
+    "date": "2021-10-30T00:00:00.000Z",
+    "description": "When early stage programmers get stuck, they can get frustrated. Here's how to make the most of it."
+  },
+  {
+    "title": "Zeke's new brand rollout",
+    "date": "2021-10-31T00:00:00.000Z",
+    "description": "Today Zeke is rolling out a fresh new visual identity and brand"
+  },
+  {
+    "title": "A word of caution on hiring rubrics",
+    "date": "2021-11-01T00:00:00.000Z",
+    "description": "Rubrics sometimes exist so that no one has to go out on a limb. That's not good."
+  },
+  {
+    "title": "Semantic operation layer",
+    "date": "2021-11-02T00:00:00.000Z",
+    "description": "Configurable, semantic units to organize and understand your app"
+  },
+  {
+    "title": "Why is Excalidraw so fucking good?",
+    "date": "2021-11-04T00:00:00.000Z",
+    "description": "The product factors that make it work so so well"
+  },
+  {
+    "title": "Helping students with pair programming",
+    "date": "2021-11-05T00:00:00.000Z",
+    "description": "Overall, pairing in the classroom is great. But issues come up! Here's how I address them."
+  },
+  {
+    "title": "Moving to a new job? You want a personal knowledge base",
+    "date": "2021-11-13T00:00:00.000Z",
+    "description": "I use Obsidian to to build a personal knowledge base to make sense of everything"
+  },
+  {
+    "title": "I returned my Remarkable2, here's why",
+    "date": "2021-11-28T00:00:00.000Z",
+    "description": "The non-writing UX is bad enough to render product unusuable"
+  },
+  {
+    "title": "Work in progress: hookreducer.com",
+    "date": "2021-12-19T00:00:00.000Z",
+    "description": "I'm building a platform to ingest and process webhooks insanely well"
+  },
+  {
+    "title": "Micro-business update: name change, software coming together",
+    "date": "2021-12-25T00:00:00.000Z",
+    "description": "I'm figuring out what this thing is and how it's going to work"
+  },
+  {
+    "title": "Things to consider before joining a bootcamp",
+    "date": "2021-12-28T00:00:00.000Z",
+    "description": "Bootcamps can work, and they can bomb. Here's what you need to know to be a smart consumer."
+  },
+  {
+    "title": "Lessons learned from a recent job search",
+    "date": "2022-01-23T00:00:00.000Z",
+    "description": "It's a pretty good time to switch jobs, but don't think the process will be easy!"
+  },
+  {
+    "title": "Reflections on babies and how they fuck up household supply chains",
+    "date": "2022-05-18T00:00:00.000Z",
+    "description": "Having a child is a wonderful thing to do, even though it causes temporary systems collapse in your home"
+  },
+  {
+    "title": "WebReducer Update 3",
+    "date": "2022-05-31T00:00:00.000Z",
+    "description": "After a hiatus, I'm working on my side project again"
+  },
+  {
+    "title": "Elevators, Subways, and Rocket Launchers: The Unpredictable Path of Software Development",
+    "date": "2023-09-04T00:00:00.000Z",
+    "description": "What we call ourself actually does matter after all."
+  },
+  {
+    "title": "Nextty: a radically collaborative computing environment",
+    "date": "2023-11-27T00:00:00.000Z",
+    "description": "What if the future of computing looked like the past"
+  },
+  {
+    "title": "Have a ball of mud? You need(ed) a map.",
+    "date": "2024-02-18T00:00:00.000Z",
+    "description": "Reflections on refactoring a big ol' monolith"
+  },
+  {
+    "title": "We need to be the historians of our own software",
+    "date": "2024-03-09T00:00:00.000Z",
+    "description": "If we want to shape the future of our codebases, we need to understand the past and the people who made the choices that got us here."
+  },
+  {
+    "title": "Get shit done by warping friction-space",
+    "date": "2024-05-29T00:00:00.000Z",
+    "description": "You can change the dynamics of your system and be less frustrated and more effective"
+  }
+]
